@@ -17,6 +17,6 @@ public class TestStreamFileIO {
 			System.out.println("this is:" + c);
 		}while(c != 'q');
 	
-		System.out.println(666);
+		System.out.println(77666);
 	}
 }
