@@ -8,7 +8,7 @@ public class Main {
 //        TestEnum testEnum = new TestEnum();
 //        testEnum.size = TestEnum.FreshJuiceSize.SMALL;
 //        System.out.println(testEnum.size);
-
+    	Integer.parseInt("S");
         //静态变量，所有类通用的变量
 //        TestStatic testStatic = new TestStatic();
 //        TestStatic normalStatic = new TestStatic();
@@ -18,6 +18,9 @@ public class Main {
 //        testStatic.normalSize = 4;
 //        System.out.println(normalStatic.staticSize);
 //        System.out.println(normalStatic.normalSize);
+    	String areacode = "320100";
+    	areacode = areacode.substring(0, 4);
+    	System.out.println(areacode);
 
 
     }
