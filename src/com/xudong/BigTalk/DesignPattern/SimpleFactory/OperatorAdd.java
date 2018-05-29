@@ -1,4 +1,4 @@
-package com.xudong.BigTalk.DesignPattern.SimpleFacroty;
+package com.xudong.BigTalk.DesignPattern.SimpleFactory;
 
 public class OperatorAdd extends AbstractOperator{
 

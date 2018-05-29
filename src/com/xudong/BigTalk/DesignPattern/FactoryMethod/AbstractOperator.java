@@ -1,4 +1,4 @@
-package com.xudong.BigTalk.DesignPattern.SimpleFacroty;
+package com.xudong.BigTalk.DesignPattern.FactoryMethod;
 
 abstract class AbstractOperator {
 

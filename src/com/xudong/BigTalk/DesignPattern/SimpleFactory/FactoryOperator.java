@@ -1,6 +1,6 @@
-package com.xudong.BigTalk.DesignPattern.SimpleFacroty;
+package com.xudong.BigTalk.DesignPattern.SimpleFactory;
 
-public class OperatorFactory{
+public class FactoryOperator{
 
 	public static AbstractOperator getOpertor(String opertor){
 		
@@ -12,12 +12,12 @@ public class OperatorFactory{
 		case "-":
 			opt = new OperatorSub();
 			break;
-		case "*":
-			
-			break;
-		case "/":
-			
-			break;
+//		case "*":
+//			
+//			break;
+//		case "/":
+//			
+//			break;
 		default:
 			break;
 		}
