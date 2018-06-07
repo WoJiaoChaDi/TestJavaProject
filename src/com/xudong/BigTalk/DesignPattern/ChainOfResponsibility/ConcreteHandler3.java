@@ -16,7 +16,7 @@ public class ConcreteHandler3 extends Handler {
 		}else if(successor != null){
 			successor.handleRequest(request);//转移到下一位
 		}else{
-			System.out.println("我已经到达联调的末端，无人处理！");
+			System.out.println("我已经抵达链条的末端，无人处理！");
 		}
 	}
 
