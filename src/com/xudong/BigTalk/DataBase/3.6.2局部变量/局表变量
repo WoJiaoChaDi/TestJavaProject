@@ -1,0 +1,10 @@
+declare x number;	--声明变量x
+BEGIN       		--开始
+  DBMS_OUTPUT.PUT_LINE('x='||x);
+  x:=0;         		--定义变量
+  WHILE x<9 LOOP    	--循环
+    x:=x+1;
+    DBMS_OUTPUT.PUT_LINE('内:x='||x);  --dbms_output.put_line('')  输出内容
+  END LOOP;       		--结束循环
+  DBMS_OUTPUT.PUT_LINE('循环结束');
+END;        --结束
