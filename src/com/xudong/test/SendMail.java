@@ -10,11 +10,19 @@ import javax.mail.internet.MimeMessage;
 
 public class SendMail {
 
+    /**
+     * 发送邮件
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
-        
+    	for (int i = 0; i < 10; i++) {
+			
+		
     	String smtpHost = "smtp.163.com";
         String from = "alexdongs@163.com";
-        String to = "xud@pete-cat.com";
+//        String to = "xud@pete-cat.com";
+        String to = "zhangsan@jfjfj.net";
         String subject = "邮件标题"; //subject javamail自动转码
     	
         Properties prop = new Properties();
@@ -39,8 +47,13 @@ public class SendMail {
         //4、创建邮件
         Message message = createSimpleMail(session, from, to, subject, theMessage.toString());
         //5、发送邮件
-        ts.sendMessage(message, message.getAllRecipients());
+        try {
+        	ts.sendMessage(message, message.getAllRecipients());
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
         ts.close();
+    	}
     }
     
     /**
